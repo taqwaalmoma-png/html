@@ -1,0 +1,38 @@
+.article {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 17px;
+}
+.article-one {
+    border: 1px solid black;
+}
+.article-two {
+    border: 2px dashed black;
+}
+.bordered-paragraph {
+    border: 2px dashed firebrick;
+}
+.article-three {
+    border: 1px solid black;
+    color: purple;
+}
+.ipsum {
+    background-color: #F5D6C6;
+    font-weight: bold;
+}
+
+.quis {
+    background-color: #FFF78A;
+    font-weight: bold;
+} 
+h2 {
+    font-size: 27px;
+}
+body {
+    background-color: #FFF7F0;
+}
+span:hover {
+    color: red;
+    background-color: yellow;
+    cursor: pointer;
+}
