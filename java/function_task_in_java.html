@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function double1(x) {
+        return 2*x ;
+        }
+        let y=4;
+        document.write("the returned value of function_double1 is :  "+double1(y)+ "<br>");
+
+
+        function double2 (x){
+        return 2*x;
+        }
+        document.write("the returned value of function_double2 is :  "+ double2(3)+ "<br>");
+
+        function double3  (x) {
+        return 2*x;
+        }
+         let num=4;
+         document.write("the returned value of function_double2 is :  "+double3(num)+ "<br>");
+
+        function sameLenght(str1,str2){
+            let len1=str1.length;
+            let len2=str2.length;
+            if(len1==len2){
+            return true;
+            }
+
+            else{
+                return 0;
+            }
+
+        }
+
+        let input_str_1= prompt("Please enter the value of the first string :").toString();
+        let input_str_2= String(prompt("Please enter the value of the second string :"));
+        document.write("the returned value of function_sameLengh is :  "+ sameLenght(input_str_1, input_str_2)+ "<br>");
+
+        function randomNumber(){
+               return Math.random();
+        }
+        document.write("the returned value of function_randomNumber is :  "+randomNumber()+ "<br>");
+
+
+    </script>
+</body>
+</html>

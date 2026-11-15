@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        /*  fundamental building blocks that performs a task or calculates a value, */  
+
+        /* how to declare a Function ?
+                consists of the function keyword, followed by:
+                1)The name of the function.
+                2) list of parameters 
+                3)statements that define the function, enclosed in curly braces
+
+          we must understand two keywords:
+                1)parameters are placeholders defined in the function.
+                2)arguments are the actual values you pass when calling the function.
+            
+
+          Default Parameters:
+                Default parameters are used when no argument is provided during the function call.
+                If no value is passed, the function automatically uses the default value.
+
+          Return Statement:
+                The return statement is used to send a result back from a function.
+                When return executes, the function stops running at that point.
+                The returned value can be stored in a variable or used directly.
+
+         A function expression :
+                is a function created as part of an expression and assigned to a variable or passed to another function. 
+                It can be named or anonymous.
+
+
+        Arrow Function :
+           A new way to write functions using the => syntax. 
+             */
+
+
+
+
+        <!--parameter and argument-->
+
+        function greet(name) {   // 'name' is a parameter
+            console.log("Hello " + name);
+        }
+
+        greet("Alice");  // "Alice" is the argument
+
+
+
+
+
+        <!--Default Parameter-->
+
+        function greet(name = "Guest") {
+            console.log("Hello, " + name);
+        }
+
+        greet();
+        greet("Aman");
+
+
+
+
+       <!--Return Statement-->
+        function add(a, b) {
+            return a + b; // returns the sum
+        }
+
+        let result = add(5, 10);
+        console.log(result);
+
+
+
+
+        <!--Function Expression-->
+        const add = function (a, b) {
+            return a + b;
+        };
+        console.log(add(2, 3));
+
+
+
+        <!--Arrow Function-->
+        const square = n => n * n;
+        console.log(square(4));
+
+/****************************************************************************************/
+        // 1. By ID
+        document.getElementById("title").innerHTML = "Welcome";
+
+        // 2. By Class Name
+        document.getElementsByClassName("text")[0].innerHTML = "First changed";
+
+        // 3. By Tag Name
+        document.getElementsByTagName("p")[1].innerHTML = "Second changed";
+
+        // 4. By Selector
+        document.querySelector("#title").style.color = "red";
+
+
+        
+
+    </script>
+</body>
+
+</html>
