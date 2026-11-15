@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Cards</title>
+
+  <style>
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      padding: 30px;
+      background: #dff7f2;
+      text-align: center;
+      transition: transform 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    @media (max-width: 600px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        background: lightblue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Responsive Cards</h1>
+
+    <div class="cards">
+      <article class="card">Card 1</article>
+      <article class="card">Card 2</article>
+      <article class="card">Card 3</article>
+    </div>
+  </div>
+</body>
+</html>
